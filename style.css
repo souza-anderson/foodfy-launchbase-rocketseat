@@ -33,6 +33,7 @@ header .content {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     display: inline-block;
+    
 }
 
 header .menu {
@@ -102,6 +103,10 @@ section.most-acessed .content h1 {
     gap: 20px;
 }
 
+.recipe-cards .card {
+    cursor: pointer;
+}
+
 .recipe-cards .card img {
     width: 100%;
     border-radius: 15px;
@@ -148,8 +153,47 @@ section.about .content h2 {
 
 section.about .content p {
     font-size: 18px;
+    text-align: justify;
 }
 
 section.recipes {
     margin: 14px 0 50px;
+}
+
+.modalOverlay {
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+}
+
+.modal {
+    max-width: 660px;
+    width: 100%;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    opacity: 1;
+    border-radius: 16px;
+    text-align: center;    
+}
+
+.active {
+    visibility: visible;
+}
+
+.modal img {
+    width: 100%;
+}
+
+.modal .close-modal {
+    margin-top: 60px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
 }
