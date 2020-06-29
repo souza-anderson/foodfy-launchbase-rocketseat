@@ -1,27 +1,20 @@
-<!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Foodfy - as melhores receitas</title>
-</head>
-<body>
+{% extends "layout.njk" %}
 
-    <header>
-        <div class="content">
-            <a href="home.html">
-                <div class="logo"></div>
-            </a>
+{% block head %}
+    <title>Foodfy - Sobre</title>   
+{% endblock %}    
 
-            <div class="menu">
-                <a style="font-weight: bold;" href="about.html">Sobre</a>
-                <a href="recipes.html">Receitas</a>
-            </div>
-        </div>        
-    </header>
+{% block menu %}
+        <div class="menu">
+            <a style="font-weight: bold;" href="/about">Sobre</a>
+            <a href="/recipes">Receitas</a>
+        </div>
+{% endblock menu %}
 
+
+
+{% block content %}
     <main>
-
         <section class="about">
             <div class="content">
                 <h1>Sobre o Foodfy</h1>
@@ -49,17 +42,5 @@
             </div>
             
         </section>
-        
-
-
     </main>
-
-    
-    <footer>
-        <p>Todos direitos reservados, receitas Foodfy.</p>
-    </footer>
-
-    
-    
-</body>
-</html>
+{% endblock content %}
