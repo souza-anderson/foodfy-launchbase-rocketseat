@@ -1,5 +1,5 @@
 <h2 align="center">
-    <img src="assets/logo.png" alt="Logo do sistema Foodfy">
+    <img src="public/assets/logo.png" alt="Logo do sistema Foodfy">
 </h2>
 
 ## Sobre
